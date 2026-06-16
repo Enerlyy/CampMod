@@ -1,0 +1,678 @@
+{
+  "mod_elements": [
+    {
+      "name": "SleepingBagWhite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_white",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/block/sleeping_bag_white.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_white.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_white.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagWhiteBlock.java",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_white.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_bag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/block/SleepingBagBlock.java",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag.json"
+        ]
+      },
+      "path": "~/System"
+    },
+    {
+      "name": "SleepingBagPlaced",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_placed",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/camp/procedures/SleepingBagPlacedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/System"
+    },
+    {
+      "name": "SleepingBagBroken",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_bag_broken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/procedures/SleepingBagBrokenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/System"
+    },
+    {
+      "name": "SleepingBagSleep",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_sleep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/procedures/SleepingBagSleepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/System"
+    },
+    {
+      "name": "SleepingBagLightGray",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_light_gray",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_light_gray.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_light_gray.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_light_gray.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_light_gray.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagLightGrayBlock.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagGray",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_gray",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/block/sleeping_bag_gray.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagGrayBlock.java",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_gray.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_gray.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_gray.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagBlack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_black",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/item/sleeping_bag_black.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_black.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagBlackBlock.java",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_black.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_black.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagBrown",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_brown",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/item/sleeping_bag_brown.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_brown.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_brown.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_brown.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagBrownBlock.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagYellow",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_yellow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_yellow.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagYellowBlock.java",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_yellow.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_yellow.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_yellow.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagOrange",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_orange",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/item/sleeping_bag_orange.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_orange.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_orange.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagOrangeBlock.java",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_orange.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagPink",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_pink",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/block/sleeping_bag_pink.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_pink.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagPinkBlock.java",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_pink.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_pink.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagRed",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_red",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/block/SleepingBagRedBlock.java",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_red.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_red.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_red.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_red.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagMagenta",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_magenta",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/block/SleepingBagMagentaBlock.java",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_magenta.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_magenta.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_magenta.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_magenta.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagPurple",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_purple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/block/SleepingBagPurpleBlock.java",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_purple.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_purple.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_purple.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_purple.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagBlue",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/block/SleepingBagBlueBlock.java",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_blue.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_blue.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_blue.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_blue.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagLightBlue",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_light_blue",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_light_blue.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_light_blue.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagLightBlueBlock.java",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_light_blue.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_light_blue.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagCyan",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_cyan",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_cyan.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_cyan.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_cyan.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagCyanBlock.java",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_cyan.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagLime",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_lime",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_lime.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_lime.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_lime.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagLimeBlock.java",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_lime.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagGreen",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_green",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/item/sleeping_bag_green.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_green.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_green.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag_green.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagGreenBlock.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SleepingBagClickReadresser",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_bag_click_readresser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/procedures/SleepingBagClickReadresserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/System"
+    },
+    {
+      "name": "RecipeSleeingBagWhite",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_white",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_white.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagLightGray",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_light_gray",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_light_gray.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagGray",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_gray",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_gray.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagBlack",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_black",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_black.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagBrown",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_brown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_brown.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagYellow",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_yellow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_yellow.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagOrange",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_orange",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_orange.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagPink",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_pink",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_pink.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagRed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_red",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_red.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagMagenta",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_magenta",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_magenta.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagPurple",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_purple",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_purple.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RecipeSleeingBagBlue",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sleeing_bag_blue",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/camp/recipes/recipe_sleeing_bag_blue.json"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:mod:freespace": [
+      "Blocks.AIR",
+      "Blocks.VOID_AIR",
+      "Blocks.CAVE_AIR",
+      "Blocks.TALLGRASS#1"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "ru_ru": {
+      "block.camp.sleeping_bag_green": "Зелёный Спальный Мешок",
+      "block.camp.sleeping_bag_lime": "Лаймовый Спальный Мешок",
+      "block.camp.sleeping_bag_yellow": "Жёлтый Спальный Мешок",
+      "block.camp.sleeping_bag_purple": "Фиолетовый Спальный Мешок",
+      "block.camp.sleeping_bag_red": "Красный Спальный Мешок",
+      "block.camp.sleeping_bag_white": "Белый Спальный Мешок",
+      "block.camp.sleeping_bag_blue": "Синий Спальный Мешок",
+      "block.camp.sleeping_bag_pink": "Розовый Спальный Мешок",
+      "block.camp.sleeping_bag_magenta": "Пурпурный Спальный Мешок",
+      "block.camp.sleeping_bag_cyan": "Бирюзовый Спальный Мешок",
+      "block.camp.sleeping_bag_light_blue": "Голубой Спальный Мешок",
+      "block.camp.sleeping_bag": "Спальный Мешок",
+      "block.camp.sleeping_bag_gray": "Серый Спальный Мешок",
+      "block.camp.sleeping_bag_brown": "Коричневый Спальный Мешок",
+      "block.camp.sleeping_bag_light_gray": "Свело-серый Спальный Мешок",
+      "block.camp.sleeping_bag_orange": "Оранжевый Спальный Мешок",
+      "block.camp.sleeping_bag_black": "Чёрный Спальный Мешок"
+    },
+    "en_us": {
+      "block.camp.sleeping_bag_green": "Green Sleeping Bag",
+      "block.camp.sleeping_bag_lime": "Lime Sleeping Bag",
+      "block.camp.sleeping_bag_yellow": "Yellow Sleeping Bag",
+      "block.camp.sleeping_bag_purple": "Purple Sleeping Bag",
+      "block.camp.sleeping_bag_red": "Red Sleeping Bag",
+      "block.camp.sleeping_bag_white": "White Sleeping Bag",
+      "block.camp.sleeping_bag_blue": "Blue Sleeping Bag",
+      "block.camp.sleeping_bag_pink": "Pink Sleeping Bag",
+      "block.camp.sleeping_bag_magenta": "Magenta Sleeping Bag",
+      "block.camp.sleeping_bag_cyan": "Cyan Sleeping Bag",
+      "block.camp.sleeping_bag_light_blue": "Light Blue Sleeping Bag",
+      "block.camp.sleeping_bag": "Sleeping Bag",
+      "block.camp.sleeping_bag_gray": "Gray Sleeping Bag",
+      "block.camp.sleeping_bag_brown": "Brown Sleeping Bag",
+      "block.camp.sleeping_bag_light_gray": "Light Gray Sleeping Bag",
+      "block.camp.sleeping_bag_orange": "Orange Sleeping Bag",
+      "block.camp.sleeping_bag_black": "Black Sleeping Bag"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "System",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "camp",
+    "modName": "LittleCamp",
+    "version": "1.0.0",
+    "author": "TimLo, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.camp"
+  },
+  "mcreatorVersion": 202400232117
+}

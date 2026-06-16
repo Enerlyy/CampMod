@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "sleeping_bag_light_blue"
+      },
+      "name": "default"
+    }
+  }
+}

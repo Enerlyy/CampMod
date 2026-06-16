@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,part=head,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray"
+    },
+    "facing=east,part=head,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray",
+      "y": 90
+    },
+    "facing=south,part=head,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray",
+      "y": 180
+    },
+    "facing=west,part=head,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray",
+      "y": 270
+    },
+    "facing=north,part=foot,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray_foot"
+    },
+    "facing=east,part=foot,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray_foot",
+      "y": 90
+    },
+    "facing=south,part=foot,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray_foot",
+      "y": 180
+    },
+    "facing=west,part=foot,occupied=false": {
+      "model": "camp:block/sleeping_bag_gray_foot",
+      "y": 270
+    },
+    "facing=north,part=head,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray"
+    },
+    "facing=east,part=head,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray",
+      "y": 90
+    },
+    "facing=south,part=head,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray",
+      "y": 180
+    },
+    "facing=west,part=head,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray",
+      "y": 270
+    },
+    "facing=north,part=foot,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray_foot"
+    },
+    "facing=east,part=foot,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray_foot",
+      "y": 90
+    },
+    "facing=south,part=foot,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray_foot",
+      "y": 180
+    },
+    "facing=west,part=foot,occupied=true": {
+      "model": "camp:block/sleeping_bag_gray_foot",
+      "y": 270
+    }
+  }
+}

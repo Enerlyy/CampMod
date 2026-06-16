@@ -1,0 +1,9 @@
+{
+  "parent": "camp:custom/sleeping_bag_lime_foot",
+  "textures": {
+    "all": "camp:block/sleeping_bag_lime",
+    "particle": "camp:block/sleeping_bag_lime",
+    "0": "camp:block/sleeping_bag_lime"
+  },
+  "render_type": "solid"
+}

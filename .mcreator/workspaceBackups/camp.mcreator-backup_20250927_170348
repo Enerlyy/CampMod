@@ -1,0 +1,176 @@
+{
+  "mod_elements": [
+    {
+      "name": "SleepingBagWhite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_white",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/camp/models/block/sleeping_bag_white.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag_white.json",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag_white.json",
+          "src/main/java/net/mcreator/camp/block/SleepingBagWhiteBlock.java",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag_white.json"
+        ]
+      }
+    },
+    {
+      "name": "SleepingBag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_bag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/block/SleepingBagBlock.java",
+          "src/main/resources/data/camp/loot_tables/blocks/sleeping_bag.json",
+          "src/main/resources/assets/camp/blockstates/sleeping_bag.json",
+          "src/main/resources/assets/camp/models/item/sleeping_bag.json",
+          "src/main/resources/assets/camp/models/block/sleeping_bag.json"
+        ]
+      }
+    },
+    {
+      "name": "SleepingBagPlaced",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_placed",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/camp/procedures/SleepingBagPlacedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SleepingBagBroken",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_bag_broken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/procedures/SleepingBagBrokenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SleepingBagSleep",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sleeping_bag_sleep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/camp/procedures/SleepingBagSleepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:mod:freespace": [
+      "Blocks.AIR",
+      "Blocks.VOID_AIR",
+      "Blocks.CAVE_AIR",
+      "Blocks.TALLGRASS#1"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.camp.sleeping_bag": "Sleeping Bag",
+      "block.camp.sleeping_bag_white": "White Sleeping Bag"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "camp",
+    "modName": "LittleCamp",
+    "version": "1.0.0",
+    "author": "TimLo, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.camp"
+  },
+  "mcreatorVersion": 202400232117
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blue_wool"
+    }
+  },
+  "result": {
+    "item": "camp:sleeping_bag_blue",
+    "count": 1
+  }
+}

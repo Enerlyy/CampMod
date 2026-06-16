@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "camp:item/sleeping_bag_itemlight_gray"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "camp:custom/sleeping_bag_green",
+  "textures": {
+    "all": "camp:block/sleeping_bag_green",
+    "particle": "camp:block/sleeping_bag_green",
+    "0": "camp:block/sleeping_bag_green"
+  },
+  "render_type": "solid"
+}

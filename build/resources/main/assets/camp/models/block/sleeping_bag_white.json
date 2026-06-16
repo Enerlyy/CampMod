@@ -1,0 +1,9 @@
+{
+  "parent": "camp:custom/sleeping_bag_white",
+  "textures": {
+    "all": "camp:block/sleeping_bag_white",
+    "particle": "camp:block/sleeping_bag_white",
+    "0": "camp:block/sleeping_bag_white"
+  },
+  "render_type": "solid"
+}
