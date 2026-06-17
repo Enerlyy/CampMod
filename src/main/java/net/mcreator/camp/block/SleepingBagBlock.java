@@ -27,7 +27,7 @@ public class SleepingBagBlock extends BedBlock {
 
 
 	public SleepingBagBlock() {
-		this(DyeColor.RED);
+		this(DyeColor.BLUE);
 	}
 
 
